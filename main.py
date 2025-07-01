@@ -10,7 +10,7 @@ def main(page: ft.Page):
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
     # Create a counter variable
-    counter = ft.Text("0", size=50, color=ft.colors.BLUE)
+    counter = ft.Text("0", size=50, color=ft.Colors.BLUE)
 
     def increment_counter(e):
         counter.value = str(int(counter.value) + 1)
@@ -24,7 +24,7 @@ def main(page: ft.Page):
     page.add(
         ft.Column([
             ft.Text("Welcome to Flet!", size=30, weight=ft.FontWeight.BOLD),
-            ft.Text("Simple Counter App", size=20, color=ft.colors.GREY_700),
+            ft.Text("Simple Counter App", size=20, color=ft.Colors.GREY_700),
             ft.Container(height=20),  # Spacer
             counter,
             ft.Container(height=20),  # Spacer
